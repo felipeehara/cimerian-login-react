@@ -5,7 +5,7 @@ import iconExit from '/public/Svgs/Profile/exit.svg';
 
 export const Profile = () => {
   return (
-    <div className='absolute'>
+    <div className='absolute bg-white'>
       <div className="border w-auto flex">
         <ul>
           <li className="text-center">Felipe Ehara</li>
