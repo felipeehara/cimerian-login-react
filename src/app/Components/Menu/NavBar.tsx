@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import imgLogo from "/public/img/logo_cimerianeditado.png";
 import iconHome from "/public/Svgs/IconHome.svg";
-import iconProfile from "/public/Svgs/profile/profile.svg";
+import iconProfile from "/public/Svgs/Profile/profile.svg";
 
 import { Profile, ProfileMobile } from '@/app/Components/Profile/Profile';
 
