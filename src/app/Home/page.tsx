@@ -1,4 +1,4 @@
-import { Calls } from "../Components/Calls/Calls";
+import { Calls } from "../Components/Calls/CallsResume";
 import { Header } from "../Components/Header/Header";
 
 
