@@ -63,39 +63,40 @@ const EditProfile = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
-      <h1 className="text-2xl font-bold mb-6">Editar Perfil</h1>
-      <form onSubmit={handleSubmit} className="space-y-6">
-        {/* Nome de Exibição e Email apenas visíveis */}
-        <TextDisplay label="Nome de Exibição" value={formData.nome} />
-        <TextDisplay label="Email" value={formData.email} />
-        <TextDisplay label="Departamento" value={formData.departamento} />
+        
+            <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+            <h1 className="text-2xl font-bold mb-6">Editar Perfil</h1>
+            <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Nome de Exibição e Email apenas visíveis */}
+                <TextDisplay label="Nome de Exibição" value={formData.nome} />
+                <TextDisplay label="Email" value={formData.email} />
+                <TextDisplay label="Departamento" value={formData.departamento} />
 
-        {/* Alteração de Senha */}
-        <PasswordInput
-          label="Nova Senha"
-          name="senha"
-          value={formData.senha}
-          onChange={handleChange}
-        />
+                {/* Alteração de Senha */}
+                <PasswordInput
+                label="Nova Senha"
+                name="senha"
+                value={formData.senha}
+                onChange={handleChange}
+                />
 
-        <PasswordInput
-          label="Confirmar Nova Senha"
-          name="confirmSenha"
-          value={formData.confirmSenha}
-          onChange={handleChange}
-        />
+                <PasswordInput
+                label="Confirmar Nova Senha"
+                name="confirmSenha"
+                value={formData.confirmSenha}
+                onChange={handleChange}
+                />
 
-        <div className="flex justify-end">
-          <button
-            type="submit"
-            className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-          >
-            Salvar Alterações
-          </button>
-        </div>
-      </form>
-    </div>
+                <div className="flex justify-end">
+                <button
+                    type="submit"
+                    className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                >
+                    Salvar Alterações
+                </button>
+                </div>
+            </form>
+            </div>
   );
 };
 
