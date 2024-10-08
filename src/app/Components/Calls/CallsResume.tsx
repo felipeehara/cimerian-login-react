@@ -10,7 +10,7 @@ export const Calls = () => {
   };
 
   return (
-    <div className="border p-4 w-64 ml-10 mt-10">
+    <div className="border border-gray-400 p-4 w-64 ml-10 mt-10">
         {/* Cabeçalho com a seta e o título */}
         <div className="flex justify-between items-center cursor-pointer border-b-2 border-blue-600" onClick={toggleExpand}>
             <h2 className="text-lg font-semibold">Meus chamados</h2>

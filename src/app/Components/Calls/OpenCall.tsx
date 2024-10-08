@@ -7,7 +7,7 @@ export const OpenCalls = () => {
 
   const handleOpenCall = () => {
   
-    router.push('/open-call');
+    router.push('/OpenTheCalls');
   };
 
   return (
@@ -28,7 +28,7 @@ export const MyCalls = () => {
 
   const handleMyCalls = () => {
    
-    router.push('/my-calls');
+    router.push('/MyCalls');
   };
 
   return (

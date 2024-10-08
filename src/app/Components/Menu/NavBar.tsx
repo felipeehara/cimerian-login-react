@@ -77,7 +77,7 @@ export const Navbar = () => {
 
                 {/* Logo (à direita no mobile) */}
                 <div className="text-white text-2xl font-bold ml-auto md:ml-0">
-                <Link href="/">
+                <Link href="/Home">
                     <Image src={imgLogo} alt="Logo Cimerian" width={150} height={50} />
                 </Link>
                 </div>
@@ -100,22 +100,7 @@ export const Navbar = () => {
                 >
                     <span>Chamados</span>
                 </Link>
-                <Link
-                    href="/services"
-                    className={`text-white hover:text-gray-400 px-4 py-2 rounded ${
-                    isActive("/services") ? "bg-gray-400" : ""
-                    }`}
-                >
-                    <span>Services</span>
-                </Link>
-                <Link
-                    href="/contact"
-                    className={`text-white hover:text-gray-400 px-4 py-2 rounded ${
-                    isActive("/contact") ? "bg-gray-400" : ""
-                    }`}
-                >
-                    <span>Contact</span>
-                </Link>
+                
                 <button 
                     onClick={toggleProfile}
                     className={`text-white hover:text-gray-400 px-4 py-2 rounded ${

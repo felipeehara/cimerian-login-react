@@ -5,7 +5,7 @@ import { Header } from "../Components/Header/Header";
 
 const Home = () => {
     return(
-        <div>
+        <div className="bg-gradient-to-br from-white to-gray-400 h-screen">
             <Header/>
 
         
