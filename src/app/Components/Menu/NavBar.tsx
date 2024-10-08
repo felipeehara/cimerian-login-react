@@ -152,7 +152,7 @@ export const Navbar = () => {
                     isActive("/Home") ? "bg-gray-400 font-bold" : ""
                     }`}
                 >
-                    Home
+                    Inicio
                 </Link>
                 <Link
                     href="/About"
@@ -160,31 +160,16 @@ export const Navbar = () => {
                     isActive("/About") ? "bg-gray-400 font-bold" : ""
                     }`}
                 >
-                    About
+                    Chamados
                 </Link>
-                <Link
-                    href="/services"
-                    className={`text-white text-lg px-4 py-2 hover:bg-gray-400 ${
-                    isActive("/services") ? "bg-gray-400 font-bold" : ""
-                    }`}
-                >
-                    Services
-                </Link>
-                <Link
-                    href="/contact"
-                    className={`text-white text-lg px-4 py-2 hover:bg-gray-400 ${
-                    isActive("/contact") ? "bg-gray-400 font-bold" : ""
-                    }`}
-                >
-                    Contact
-                </Link>
+                
                 <button
                     onClick={toggleProfileMobile}
                     className={`text-left text-white text-lg px-4 py-2 hover:bg-gray-400 ${
                     isActive("/contact") ? "bg-gray-400 font-bold" : ""
                     }`}
                 >
-                    Profile
+                    Perfil
                 </button>
                 {isProfileMobile && <ProfileMobile />}   
                 </nav>

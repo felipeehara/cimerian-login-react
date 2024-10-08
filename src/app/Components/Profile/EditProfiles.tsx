@@ -47,6 +47,7 @@ const EditProfile = () => {
   const [formData, setFormData] = useState({
     nome: "Nome do Usuário",
     email: "email@exemplo.com",
+    departamento: "Departamento",
     senha: "",
     confirmSenha: "",
   });
@@ -68,6 +69,7 @@ const EditProfile = () => {
         {/* Nome de Exibição e Email apenas visíveis */}
         <TextDisplay label="Nome de Exibição" value={formData.nome} />
         <TextDisplay label="Email" value={formData.email} />
+        <TextDisplay label="Departamento" value={formData.departamento} />
 
         {/* Alteração de Senha */}
         <PasswordInput

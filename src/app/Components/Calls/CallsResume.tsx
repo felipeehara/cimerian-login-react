@@ -27,7 +27,6 @@ export const Calls = () => {
                 <p>0 Pendente(s)</p>
                 <p>0 novo(s)</p>
                 <p>0 em atendimento(s)</p>
-                <p>0 Pendente(s)</p>
                 <p className='border-b-2 border-blue-600'>0 Parado(s)</p>
 
                 <div className='flex justify-center'>
