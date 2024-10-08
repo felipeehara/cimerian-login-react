@@ -1,16 +1,25 @@
 "use client";
 import Image from 'next/image';
+import {useRouter} from 'next/navigation';
+
 import iconEdit from '/public/Svgs/Profile/edit.svg';
 import iconExit from '/public/Svgs/Profile/exit.svg';
 
 export const Profile = () => {
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push('/EditProfile');
+  };
+
   return (
     <div className='absolute bg-white'>
       <div className="border w-auto flex">
         <ul>
           <li className="text-center">Felipe Ehara</li>
           <li> 
-            <button className="hover:bg-gray-300 w-52 flex gap-2">
+            <button className="hover:bg-gray-300 w-52 flex gap-2" 
+              onClick={handleNavigation}>
               <Image 
                 src={iconEdit} 
                 alt="Edit Icon" 
